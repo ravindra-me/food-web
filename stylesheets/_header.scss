@@ -1,0 +1,112 @@
+.header {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 1rem 0;
+
+  .brand {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    font-family: "Satisfy", cursive;
+    span {
+      color: rgb(244, 140, 52);
+    }
+  }
+
+  label,
+  input {
+    display: none;
+  }
+
+  .header-nav {
+    a {
+      margin-left: 2rem;
+      color: #ffffff;
+      &:hover {
+        color: rgb(244, 140, 52);
+      }
+    }
+
+    .active {
+      border-bottom: 4px solid rgb(244, 140, 52);
+    }
+  }
+}
+
+.back-adjust {
+  height: 2.8rem;
+  display: none;
+}
+
+/* MediaQuery*/
+@media all and (max-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2.8rem;
+    z-index: 99;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .back-adjust {
+    display: block;
+  }
+
+  .brand {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    z-index: 99;
+  }
+
+  #bars {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 99;
+    display: inline-block;
+    color: rgb(244, 140, 52);
+    font-size: 2rem;
+  }
+
+  input:checked ~ #bars {
+    display: none;
+  }
+
+  input:checked ~ #cross {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 300;
+    z-index: 98;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  input:checked ~ .header-nav {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 1);
+    z-index: 97;
+    ul {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: -1rem;
+    }
+    ul li {
+      margin: 2rem auto;
+    }
+  }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Title-->
+    <title>Reservation | FoodGalore</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5cc6fb9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container-header flex justify-between align-center">
+        <a href="index.html" class="brand">
+          Food
+          <span>Galore</span></a
+        >
+
+        <input type="checkbox" name="toggle" id="toggle" />
+        <label for="toggle" id="bars"><i class="fas fa-bars"></i></label>
+        <label for="toggle" id="cross"><i class="fas fa-times"></i></label>
+
+        <nav class="header-nav">
+          <ul class="flex justify-between align-center">
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="#" class="active">MAKE A RESERVATION</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="back-adjust"></div>
+
+    <!--Main-->
+    <main class="reservation-page">
+      <!--Hero Section-->
+      <section class="hero">
+        <div class="container">
+          <h2>Make A Reservation</h2>
+          <blockquote>
+            In the mood for food? Food is always a good idea!
+          </blockquote>
+        </div>
+      </section>
+
+      <!--Contcact Section-->
+      <section class="contact padding">
+        <div class="container">
+          <h3>Contact Us</h3>
+          <p>
+            Do you have any query? You can always reach us, we are glad to help
+            you.
+          </p>
+        </div>
+      </section>
+
+      <!--GetIn Touch Section-->
+      <section class="get-in-touch padding">
+        <h5>Get In Touch</h5>
+
+        <div class="container flex justify-between align-center wrap">
+          <div class="flex-50">
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.9195155713755!2d76.35140991557358!3d32.20639932016648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1622965453590!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="flex-50">
+            <nav class="links">
+              <ul class="flex flex-column align-start justify-evenly">
+                <li>
+                  <span>Address:</span>
+                  <a href="https://g.page/AltCampus?share" target="_blank"
+                    >#123, Dharamshala, HP, INDIA</a
+                  >
+                </li>
+                <li>
+                  <span>Email:</span>
+                  <a href="mailto:abhishek.990914@gmail.com"
+                    >abhishek.990914@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <span>Phone:</span>
+                  <a href="tel:+919389732668">+91-93897-32668</a>
+                </li>
+                <li>
+                  <span>Whatsapp:</span>
+                  <a href="https://wa.me/message/CFMFR4SDSF4XN1" target="_blank"
+                    >+91-93897-32668</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!--Reservation Form Section-->
+      <section class="form padding">
+        <div class="container">
+          <h3>Make A Reservation</h3>
+
+          <form>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Your Phone"
+              required
+            />
+            <input
+              type="text"
+              id="date"
+              placeholder="Checkin Date"
+              onfocus="(this.type='date')"
+            />
+            <input
+              type="text"
+              id="time"
+              placeholder="Checkin Time"
+              onfocus="(this.type='time')"
+            />
+            <select name="table" id="table">
+              <option value="" selected>Table Type</option>
+              <option value="2chairs">Table With 2 Chairs</option>
+              <option value="4chairs">Table With 4 Chairs</option>
+              <option value="6chairs">Table With 6 Chairs</option>
+              <option value="8chairs">Table With 8 Chairs</option>
+              <option value="10chairs">Table With 10 Chairs</option>
+            </select>
+            <textarea name="message" id="message" rows="6">
+            Your Message
+           </textarea
+            >
+            <button
+              href="reservation.html"
+              class="btn btn-primary"
+              name="submit"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!--Background-->
+      <div class="background"></div>
+    </main>
+
+    <!--Footer-->
+    <footer class="padding">
+      <div class="footer-main container flex justify-between align-center wrap">
+        <div class="c-box flex-25">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Reach Us:</h4>
+          <a href="https://g.page/AltCampus?share" target="_blank"
+            >#123, Dharamshala, HP, INDIA</a
+          >
+        </div>
+
+        <div class="c-box flex-25">
+          <i class="far fa-envelope"></i>
+          <h4>Email Us:</h4>
+          <a href="mailto:abhishek.990914@gmail.com"
+            >abhishek.990914 @gmail.com</a
+          >
+        </div>
+
+        <div class="c-box flex-25">
+          <i class="fas fa-phone"></i>
+          <h4>Call Us:</h4>
+          <a href="tel:+919389732668">+91-93897-32668</a>
+        </div>
+
+        <div class="c-box flex-25 follow">
+          <i class="fas fa-users"></i>
+          <h4>Follow Us:</h4>
+
+          <div>
+            <ul class="flex justify-around align-center">
+              <li>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.google.com" target="_blank"
+                  ><i class="fab fa-google-plus-square"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <small>All rights reserved | &copy; 2021 Food Galore</small>
+      </div>
+    </footer>
+  </body>
+</html>

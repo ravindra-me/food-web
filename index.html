@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Title-->
+    <title>Home | Food Galore</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5cc6fb9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container-header flex justify-between align-center">
+        <a href="#" class="brand">
+          Food
+          <span>Galore</span></a
+        >
+
+        <input type="checkbox" name="toggle" id="toggle" />
+        <label for="toggle" id="bars"><i class="fas fa-bars"></i></label>
+        <label for="toggle" id="cross"><i class="fas fa-times"></i></label>
+
+        <nav class="header-nav">
+          <ul class="flex justify-between align-center">
+            <li>
+              <a href="#" class="active">HOME</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="reservation.html">MAKE A RESERVATION</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="back-adjust"></div>
+
+    <!--Main-->
+    <main class="home-page">
+      <!--Hero Section-->
+      <section class="hero">
+        <div class="container">
+          <h1>
+            Skinny people are easier to kidnap.<br />
+            Eat Healthy. <br />Stay safe.
+          </h1>
+          <p>
+            It's easier to be faithful to a restaurant than it is to a woman.
+          </p>
+          <a href="about.html" class="btn btn-primary"> WHO WE ARE </a>
+          <a href="reservation.html" class="btn btn-secondary">
+            MAKE A RESERVATION
+          </a>
+        </div>
+      </section>
+
+      <!--Todays Menu Section-->
+      <section class="todays">
+        <div class="container">
+          <div
+            class="recp flex justify-between align-center flex-wrap"
+            style="font-size: 0"
+          >
+            <div class="flex-50 order-1">
+              <img
+                src="./assets/media/dal.webp"
+                alt="Image Here"
+                class="full-width"
+              />
+            </div>
+            <article class="flex-50 order-2" style="padding: 1rem 2rem">
+              <h5>Today's Special</h5>
+              <p>
+                " Vegan Madras Curry Vegetable Soup" Madras curry vegetable soup
+                has an intensely flavorful, spicy profile that tastes distinctly
+                different from other curries you may have tried. Adding
+                vegetables and coconut milk to this simple soup gives it a silky
+                texture and lots of nutrition.
+              </p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </article>
+
+            <article class="flex-50 order-3" style="padding: 1rem 2rem">
+              <h5>Most Demanded</h5>
+              <p>
+                "Baked Vegetarian Samosas With Phyllo Pastry" Traditionally,
+                crispy samosas are made with a flour-based dough seasoned with
+                caraway seeds and then deep-fried in ghee or oil. This recipe
+                bakes them, using phyllo pastry for an extra fast prep. The
+                result is quite different from what you would expect from
+                samosas, but you may enjoy the this variation.
+              </p>
+              <a href="#" class="btn btn-primary">View More</a>
+            </article>
+
+            <div class="flex-50 order-4">
+              <img
+                src="./assets/media/indian.jpg"
+                alt="Image Here"
+                class="full-width"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Speciality Section-->
+      <section class="speciality padding">
+        <h3>Our Specialtities</h3>
+        <p>Check out our specialities menu here.</p>
+        <div class="container flex justify-between align-start wrap">
+          <article class="special-dish flex-20">
+            <img
+              src="./assets/media/breakfast.jpg"
+              alt="Image here"
+              class="full-width"
+            />
+            <h5>The Best Breakfast</h5>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <a href="#">View More >></a>
+          </article>
+
+          <article class="special-dish flex-20">
+            <img
+              src="./assets/media/mains.jpg"
+              alt="Image here"
+              class="full-width"
+            />
+            <h5>Tasty-Healthy Dinners</h5>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <a href="#">View More >></a>
+          </article>
+
+          <article class="special-dish flex-20">
+            <img
+              src="./assets/media/gall3.jpg"
+              alt="Image here"
+              class="full-width"
+            />
+            <h5>Delicious Desserts</h5>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <a href="#">View More >></a>
+          </article>
+
+          <article class="special-dish flex-20">
+            <img
+              src="./assets/media/drinks.jpg"
+              alt="Image here"
+              class="full-width"
+            />
+            <h5>Fruit Juices &Wine</h5>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <a href="#">View More >></a>
+          </article>
+        </div>
+      </section>
+
+      <!--Reservation Section-->
+      <section class="reserve padding">
+        <h3>Make A Reservation</h3>
+        <a href="reservation.html" class="btn btn-primary"> Reservation</a>
+      </section>
+
+      <!--Backgroud-->
+      <div class="background"></div>
+    </main>
+
+    <!--Footer-->
+    <footer class="padding">
+      <div class="footer-main container flex justify-between align-center wrap">
+        <div class="c-box flex-25">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>ReachUs:</h4>
+          <a href="https://g.page/AltCampus?share" target="_blank"
+            >#123, Dharamshala, HP, INDIA</a
+          >
+        </div>
+
+        <div class="c-box flex-25">
+          <i class="far fa-envelope"></i>
+          <h4>Email Us:</h4>
+          <a href="mailto:abhishek.990914@gmail.com"
+            >abhishek.990914 @gmail.com</a
+          >
+        </div>
+
+        <div class="c-box flex-25">
+          <i class="fas fa-phone"></i>
+          <h4>Call Us:</h4>
+          <a href="tel:+919389732668">+91-93897-32668</a>
+        </div>
+
+        <div class="c-box flex-25 follow">
+          <i class="fas fa-users"></i>
+          <h4>Follow Us:</h4>
+          <nav class="flex justify-around align-center">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fab fa-google-plus-square"></i
+            ></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <small>All rights reserved | &copy; 2021 Food Galore</small>
+      </div>
+    </footer>
+  </body>
+</html>

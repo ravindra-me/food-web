@@ -1,0 +1,63 @@
+footer {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 1);
+  }
+
+.footer-main {
+  .c-box {
+    border-right: 1px solid gray;
+    text-align: center;
+    height: 13rem;
+    padding: 2rem;
+    &:hover {
+      background-color: rgb(244,140,52);
+    }
+
+   i{
+       font-size: 1.3rem;
+   }
+
+   h4{
+       margin: 1rem auto;
+   }
+  }
+
+  .follow {
+    border-right: none;
+    div i{
+        font-size: 1.3rem;  
+    }
+  }
+
+  a{
+      color:rgba(#ffffff, .9);
+  }
+}
+
+.footer-copyright {
+  padding-top: 2rem;
+  text-align: center;
+  small {
+    font-size: 0.85rem;
+    color: rgba(white, 0.7);
+  }
+}
+
+/*Media Query*/
+@media all and (max-width:768px){
+ html{
+   font-size: 14px;
+ }
+   
+ .footer-main .c-box{
+   border: none;
+ }
+
+.footer-main .follow{
+  border-bottom: 1px solid gray;
+}
+
+ .follow div i {
+   margin:1.5rem,;
+ }
+}
